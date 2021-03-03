@@ -42,7 +42,7 @@ int main(int argc, char** argv){
     Buffer<DTYPE> A(n, n, "matrix A");
     Buffer<DTYPE> x1(n, "vector x1");
     Buffer<DTYPE> x2(n, "vector x2");
-    Buffer<DTYPE> x1(n, "vector y1");
+    Buffer<DTYPE> y1(n, "vector y1");
     Buffer<DTYPE> y2(n, "vector y2");
     srand(time(NULL));
 
