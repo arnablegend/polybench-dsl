@@ -59,7 +59,7 @@ int main(int argc, char** argv){
     // out = (A * B) * (C * D)
     tmp(i) += A(r.x, i) * x(i);
     f_y(i) += B(r.x, i) * x(i);
-    f_y(i) = alpha * tmp(i) + beta * y(i);
+    f_y(i) = alpha * tmp(i) + beta * f_y(i);
 
     // Using basic schedule...Can be optimized
     tmp.compute_root();
